@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container">
+
+        <div id="sec1">
+
+            <form id="inputfield">
+
+                <input type="search" placeholder="Enter City Name"
+                id="location"
+                autocomplete="off">
+                <button id="btn">
+                    Search
+                </button>
+            </form>
+
+            <div id="contents">
+                <div id="locat-disp">
+                    <p>--------</p>
+                </div>
+                <div id="logo">
+                    <img id="temp-icon" src="./icons/sun.svg" alt="">
+                    <p id="para">
+                        <span id="temp">
+                            --
+                        </span>
+                        <span id="unit">
+                            &#176c
+                        </span>
+                    </p>
+                </div>
+                <div id="climate">
+                    <p>--------</p>
+                </div>
+            </div>
+            <div id="time">
+
+                <p id="dt">DATE  <i class="fa-solid fa-hand-point-right"></i></p>
+                <div class="tims" id="date"></div>
+                <p>:</p>
+                <div class="tims" id="month"></div>
+                <p>:</p>
+                <div class="tims" id="year"></div>
+                <p>:</p>
+                <div class="tims" id="day"></div>
+                
+            </div>
+            <div id="time">
+
+                <p id="dt">TIME <i class="fa-solid fa-hand-point-right"></i></p>
+                <div class="tims" id="hour"></div>
+                <p>:</p>
+                <div class="tims" id="mins"></div>
+                <p>:</p>
+                <div class="tims" id="secs"></div>
+                <p>:</p>
+                <div class="tims" id="am_pm"></div>
+                
+            </div>
+        </div>
+
+        <div class="news-container">
+            <div class="app">
+                <h1 id="title">Today's NEWS</h1>
+    
+                <div class="lds-ring" ><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f104cd02b3.js" crossorigin="anonymous"></script>
+</body>
+
+<template id="news">
+    <div class="card">
+        <div class="title"> <h3>There is bomb blast in chennai.</h3></div>
+        <hr style="margin:5px;opacity:0.2">
+        <div>
+            <span class="author">John Wich A, 10:00 AM</span>
+        </div>
+        <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cumque incidunt, cum fugit eum soluta, dignissimos voluptas adipisci possimus ea nesciunt delectus deleniti. Fuga sit, animi assumenda eos nesciunt similique?
+        </div>
+        <div id="openlink">
+            <a href="https://www.linkedin.com/in/chennai/" class="url" target="_blank">
+                Open                     
+            </a>
+        </div>
+    </div>
+</template>
+
+
+</html>
