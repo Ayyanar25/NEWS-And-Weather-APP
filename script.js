@@ -71,7 +71,9 @@ async function getNews(city){
     
 
     let newsapi=`https://newsapi.org/v2/everything?q=${city}&from=${year}-${month}-${dat}&sortBy=publishedAt&apiKey=4b1257c025964d56b12ddb06744023a8`; 
-    const response = await fetch(newsapi);
+    const response = await fetch(newsapi,{
+        mode: "cors"
+    });
     const resultJson = await (response.json());
 
     document.getElementsByClassName("lds-ring")[0].style.display = "none"
